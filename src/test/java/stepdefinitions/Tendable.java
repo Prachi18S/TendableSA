@@ -80,15 +80,12 @@ public class Tendable {
 
 	@When("user clicks {string}  button")
 	public void user_clicks_button(String button) throws InterruptedException {
-		Thread.sleep(2000);
 		driver.findElement(By.name(button)).click();
 	}
 	@When("user clicks on submit button")
 	public void user_clicks_on_submit_button() throws InterruptedException {
-		Thread.sleep(2000);
 		WebElement submit= driver.findElement(By.name("form_page_submit"));
 		submit.click();
-		Thread.sleep(2000);
 	}
 	
 
